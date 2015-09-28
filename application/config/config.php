@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'F:/devWorld/_devApp/xampp/htdocs/codeIgniter/';
+$config['base_url'] = 'http://localhost/codeIgniter/';
 
 /*
 |--------------------------------------------------------------------------

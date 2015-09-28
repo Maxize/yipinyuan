@@ -1,12 +1,15 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
 <html>
 	<head>
 		<title>Insert Data Into Database Using CodeIgniter Form</title>
 		<link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'/>
-		<link rel="stylesheet" type="text/css" href="../../assets/stylesheets/styles.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/stylesheets/styles.css" />
 	</head>
 	<body>
 		<div id="container">
-			<?php echo form_open('insert_ctrl/'); ?>
+			<?php echo form_open('Entry/insert'); ?>
 			<h1>Insert Data Into Database Using CodeIgniter</h1><hr/>
 			<?php if (isset($message)) { ?>
 				<CENTER><h3 style="color:green;">Data inserted successfully</h3></CENTER><br>
