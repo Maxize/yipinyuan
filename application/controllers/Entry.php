@@ -42,6 +42,13 @@ class Entry extends CI_Controller {
 			$this->load->view('entries/insert_view', $data);
 		}
 	}
+
+	function show ($id) {
+		
+		$data['Entries'] = $this->Entry_model->getEntriesByColumnId($id);
+		$this->load->view('entries/show_view', $data);
+
+	}
 }
 
 ?>
