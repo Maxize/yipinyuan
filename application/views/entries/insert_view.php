@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<title>Insert Data Into Database Using CodeIgniter Form</title>
 		<link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'/>
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/stylesheets/styles.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/styles.css" />
 	</head>
 	<body>
 		<div id="container">

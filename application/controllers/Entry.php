@@ -10,7 +10,8 @@ class Entry extends CI_Controller {
 
 	function index() {
 		//Including validation library
-		$this->load->view('entries/insert_view');
+		// $this->load->view('entries/insert_view');
+		$this->load->view('entries/index');
 	}
 
 	function insert () {
@@ -44,11 +45,12 @@ class Entry extends CI_Controller {
 	}
 
 	function show ($id) {
-		
+
 		$data['Entries'] = $this->Entry_model->getEntriesByColumnId($id);
 		$this->load->view('entries/show_view', $data);
 
 	}
+
 }
 
 ?>
