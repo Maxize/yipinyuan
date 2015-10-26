@@ -16,6 +16,9 @@ class Columns extends CI_Controller {
 	function insert () {
 		
 	}
+
+	
+
 }
 
 ?>
