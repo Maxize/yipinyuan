@@ -1,5 +1,4 @@
 <?php
-include "entity/Columns.php";
 
 class ColumnsManager {
 	var $columnsArrayList;
@@ -47,6 +46,20 @@ class ColumnsManager {
 	    $this->columnsArrayList = $tree;
 	    return $tree;
 	}	
+
+	/**
+	 * [getTreeData description]
+	 * @param  [type] $tree [description]
+	 * @return [type]       [description]
+	 */
+	function getTreeData($tree){
+	    foreach($tree as $t){
+	        echo $t['columnsName'].'<br/>';
+	        if(isset($t['list'])){
+	            $this->getTreeData($t['list']);
+	        }
+	    }
+	}
 
 }
 ?>

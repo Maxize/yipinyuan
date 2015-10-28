@@ -9,11 +9,11 @@ $arrayData = array(
 	4 => array("columnsId" => 4, "columnsName" => "leaf_3", "parentId" => 2),
 	5 => array("columnsId" => 5, "columnsName" => "leaf_4", "parentId" => 2),
 	6 => array("columnsId" => 6, "columnsName" => "leaf_5", "parentId" => 3),
-	7 => array("columnsId" => 7, "columnsName" => "leaf_5", "parentId" => 3),
-	8 => array("columnsId" => 8, "columnsName" => "leaf_5", "parentId" => 3),
-	9 => array("columnsId" => 9, "columnsName" => "leaf_5", "parentId" => 4),
+	7 => array("columnsId" => 7, "columnsName" => "leaf_6", "parentId" => 3),
+	8 => array("columnsId" => 8, "columnsName" => "leaf_7", "parentId" => 3),
+	9 => array("columnsId" => 9, "columnsName" => "leaf_8", "parentId" => 4),
 	);
-
-print_r($manager->generateTree($arrayData));
+$tree = $manager->generateTree($arrayData);
+$manager->getTreeData($tree);
 
 ?>
